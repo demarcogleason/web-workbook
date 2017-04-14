@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--my style sheet-->
     <link rel="stylesheet" href="css/style.css"></link>
-    <!--my css reset-->
-    <link rel="stylesheet" href="web-workbook/04week/welcome/css-reset.css"></link>
+    <!--bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <!--link to my js file-->
     <script src="javascript/script.js"></script>
     <!--link for font awesome icons-->
@@ -51,46 +51,109 @@
         <section id="hero">
             <h1 class="air-force">I Have Sole Boutique</h1>
            <!--shop now link-->
-            <a href="https://thepremierstore.com/">
+            <!-- <a href="https://thepremierstore.com/">
                 <div class="shop-now">
                     Shop Now
                 </div>
-            </a>
+            </a> -->
+
+            <a href="https://thepremierstore.com/" class="btn shop-now">Shop Now</a>
+
+            <!-- <button type="button" class="btn shop-now">Shop Now</button> -->
        </section>
 
-        <article>
+
           <!--img of blue shoe-->
+          <article class="nike-copy">
+            <div class="container-fluid">
+              <div class="row nike-update">
+                <div class="col-sm-6">
             <img src="img/huarache.jpg" class="huarache">
+          </div><!--col-sm-6-->
+
+          <div class="col-sm-6">
             <h2 class="text-container">Nike brings back the Huarache just in time for spring.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non interdum ante, ac finibus massa. Maecenas quis massa nec mauris pulvina.Morbi dignissim semper arcu quis pulvinar. Nulla sit amet finibus nulla. Sed semper sed dui ac ornare.
-                Sed id arcu eu tortor condimentum tempus a sit amet nisl. Nunc sagittis, augue ac suscipit aliquet, turpis orci viverra ligula, in ullamcorper mauris nibh non turpis. In eleifend vulputate ligula, non luctus leo bibendum ut. Morbi quis
-                metus in nisi bibendum ultricies eu ac velit. Aliquam erat volutpat. Aliquam mattis </p>
+                Sed id arcu eu tortor condimentum tempus a sit amet nisl.</p>
             <p>Nunc suscipit ipsum metus, vel tincidunt odio tempus scelerisque. Vestibulum sem erat, mollis ut placerat in, molestie lobortis sem. Integer ipsum mauris, luctus ut tortor vel, vulputate placerat urna. Donec nec lorem consequat, hendrerit
-                urna eget, rutrum felis. Phasellus vestibulum porttitor laoreet. Mauris eleifend venenatis mi, vel tincidunt eros consectetur sit amet. Ut quis dapibus lectus. Mauris tincidunt ligula at erat luctus pellentesque. Nulla facilisi. Suspendisse
-                ullamcorper turpis nulla, sit amet porttitor magna suscipit in. Mauris maximus at erat et hendrerit. In pharetra vitae magna at hendrerit. Suspendisse vel magna tincidunt, iaculis magna sed, finibus est.</p>
+                urna eget, rutrum felis.</p>
+              </div><!--col-sm-6-->
+              </div><!--row-->
+              </div><!--container-->
         </article>
 
 
         <section>
-            <div class="compare">
+          <div class="container-fluid compare">
+            <div class="row">
+            <div class="col-md-6 col-sm-6">
                 <div class="fashion">
                     <h1>Fashion</h1></div>
+                    </div>
+
+                  <div class="col-md-6 col-sm-6">
                 <div class="performance">
                     <h1>Performance</h1></div>
-            </div>
+                    </div>
 
-        </section>
+          </div><!--row-->
+        </div><!--container-->
+</section>
 
 
 
 
 
-        <section class="showcase-wrapper">
+        <!-- <section class="showcase-wrapper"> -->
+
+        <div class="container-fluid">
+          <div class="row showcase-row">
+            <div class="col-md-3 col-sm-6">
             <div class="showcase">
                 <a href="#"><img src="img/asos4.jpg" class="asos4"></a>
                 <br>
+                <h3 id="insiders">Sole Insiders</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                </div>
+              </div><!--col-sm-3-->
 
-                <a href="#"><img src="img/asos3.jpg" class="asos3"></a>
+              <div class="col-md-3 col-sm-6">
+              <div class="showcase">
+                  <a href="#"><img src="img/asos3.jpg" class="asos3"></a>
+                  <br>
+                  <h3 id="insiders">Sole Insiders</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                  </div>
+                </div><!--col-sm-3-->
+
+                <div class="col-md-3 col-sm-6">
+                <div class="showcase">
+                    <a href="#"><img src="img/asos2.jpg" class="asos2"></a>
+                    <br>
+                    <h3 id="insiders">Sole Insiders</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                    </div>
+                  </div><!--col-sm-3-->
+
+                  <div class="col-md-3 col-sm-6">
+                  <div class="showcase">
+                      <a href="#"><img src="img/asos1.jpg" class="asos1"></a>
+                      <br>
+                      <h3 id="insiders">Sole Insiders</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                      </div>
+                    </div><!--col-sm-3-->
+              </div><!--row-->
+
+            </div><!--container-->
+
+
+
+
+
+
+
+                <!-- <a href="#"><img src="img/asos3.jpg" class="asos3"></a>
                 <a href="#"><img src="img/asos2.jpg" class="asos1"></a>
                 <a href="#"><img src="img/asos1.jpg" class="asos2"></a>
                 <div class="headers">
@@ -99,10 +162,10 @@
                     <h1 id="app">Sole App</h1>
                     <h1 id="student">Student Perks</h1>
                 </div>
-            </div>
+            </div> -->
             <!-- </section> -->
 
-            <section class="comments-wrapper">
+            <!-- <section class="comments-wrapper">
                 <div class="comments">
                     <div class="comment1">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
@@ -117,11 +180,15 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus ullamcorper turpis nulla, sit amet porttitor magna suscipit in.</p>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section id="contact-wrapper">
+         <section>
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-sm-12">
+            <div id="contact-wrapper">
                 <div class="contact">
-                    <a href="#">
+                    <!-- <a href="#">
                         <div class="austin">
                             Austin
                         </div>
@@ -130,10 +197,13 @@
                         <div class="sanantonio">
                             San Antonio
                         </div>
-                    </a>
+                    </a> -->
                 </div>
                 </div>
-            </section>
+              </div><!--col-md-12-->
+              </div><!--row-->
+              </div><!--container-->
+          </section>
 
 
 

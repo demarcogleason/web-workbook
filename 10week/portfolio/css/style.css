@@ -41,8 +41,9 @@ h4 {
 .html {width: 90%;}
 .css {width: 85%;}
 .js {width: 75%;}
+.bootstrap {width: 85%;}
 
-.html, .css, .js {
+.html, .css, .js, .bootstrap {
   background: #56CCF2;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -69,6 +70,8 @@ background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, F
   display:inline-block;
   padding: 10px 0;
 }
+
+
 
 #my-work, h2{
   border-top:1px solid #CCCCCC;
@@ -332,6 +335,7 @@ footer .glyphicon {
 
 .thumbnail .mask p{
   font-size:16px;
+  font-family: Montserrat, sans-serif;
 }
 
 
@@ -448,6 +452,8 @@ footer .glyphicon {
     transform: scale(1);
     opacity: 1;
 }
+
+
 
 
 @keyframes slide {

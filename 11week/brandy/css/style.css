@@ -1,0 +1,158 @@
+.navbar{
+  border-radius: 0;
+  background-color: #585359;
+}
+
+img{
+  width:100%;
+}
+
+.carousel{
+  margin-top: -20px;
+}
+
+.services{
+  text-align: center;
+
+}
+
+.services-intro{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.img-circle{
+  /*border-radius:50%;*/
+  width:150px;
+  height:150px;
+}
+
+.service-copy{
+
+  display:inline-block;
+  text-align: center;
+}
+
+.we-care{
+  margin-top:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+
+.we-care img{
+  width: 100%;
+}
+
+.commit{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height:25vh;
+  background-color: #FAFAFA;
+
+}
+
+.grey-bar{
+  background-color: #373737;
+  color:white;
+  text-align: center;
+}
+
+.years, .appoint{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*text-align: center;*/
+}
+
+.hours-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.fa{
+  color: #DD7B9B;
+}
+
+
+
+ul{
+  list-style-type: none;
+}
+
+.hours-wrapper, .text-default{
+text-align: left;
+}
+
+.pull-right{
+  text-align: right;
+}
+
+.info{
+  margin-top: 20px;
+  text-align: center;
+  background-color: #B8B8B8;
+}
+
+.info h1{
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.artist-header{
+  text-align: center;
+  margin-top: 20px;
+  margin: 0;
+}
+
+.artist-header h1{
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.profile-wrap{
+  text-align: center;
+  width:100%;
+  /*margin:10px;*/
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+}
+
+
+
+.profile{
+  border: 5px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:27%;
+}
+
+.profile img{
+  max-width:78px;
+  max-height: 78px;
+  border-radius: 70%;
+}
+
+/*Paralax effect*/
+.parallax {
+    /* The image used */
+    background-image: url("../img/laughing.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
