@@ -40,8 +40,8 @@ h4 {
 
 .html {width: 90%;}
 .css {width: 85%;}
-.js {width: 75%;}
-.bootstrap {width: 85%;}
+.js {width: 55%;}
+.bootstrap {width: 75%;}
 
 .html, .css, .js, .bootstrap {
   background: #56CCF2;  /* fallback for old browsers */
@@ -408,7 +408,7 @@ footer .glyphicon {
 
 }
 .view-tenth .mask {
-    background-color: rgba(255, 231, 179, 0.3);
+    background-color: #DDDDDD;
     transition: all 0.5s linear;
     opacity: 0;
     width:100%;

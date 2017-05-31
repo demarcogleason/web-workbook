@@ -5,6 +5,7 @@ for (var i = 1; i < 10; i++) {
 
 }
 
+//This tells javascript the drawing will be 2d
 var ctx = [];
 for (var i = 1; i < 10; i++) {
     ctx[i] = button[i].getContext('2d');
@@ -18,7 +19,7 @@ for (var i = 1; i < 10; i++) {
 
 }
 
-//this will show winner player only one time
+//this will show winning player only one time
 var isResult = false;
 /*This will hold the value of the canvas element.
 Ex- if i click first canvas element with X.
@@ -49,6 +50,7 @@ function loop(x) {
 
             //ctx means whichever button i select, draw 'x' on it
             ctx[x].lineWidth = 3;
+            //where to start and end in drawing 'X' and 'O'
             ctx[x].beginPath();
             ctx[x].moveTo(10, 10);
             ctx[x].lineTo(90, 90);
@@ -59,7 +61,7 @@ function loop(x) {
 
             computerTurn();
         }, 300);
-        /*Since theres a 3 milisecond delay to turn canvas. this delay in chevk winner will be able to check if you or computer won... it has the time to now*/
+        /*Since theres a 3 milisecond delay to turn canvas. this delay in check winner will be able to check if you or computer won... it has the time to now*/
         setTimeout(checkWinner, 1000);
 
     }
@@ -71,38 +73,6 @@ function computerTurn() {
     //if random number is 0.2, 'o' will be drawn on button2..etc
     var r = Math.random();
 
-    //the computers combos
-    // if (content[1] == '0' && content[2] == '0' && !bDisabled[3]) draw0steps(3);
-    // else if (content[1] == '0' && content[3] == '0' && !bDisabled[2]) draw0steps(2);
-    // else if (content[2] == '0' && content[3] == '0' && !bDisabled[1]) draw0steps(1);
-    //
-    // else if (content[4] == '0' && content[5] == '0' && !bDisabled[6]) draw0steps(6);
-    // else if (content[4] == '0' && content[6] == '0' && !bDisabled[5]) draw0steps(5);
-    // else if (content[5] == '0' && content[6] == '0' && !bDisabled[4]) draw0steps(4);
-    //
-    // else if (content[7] == '0' && content[8] == '0' && !bDisabled[9]) draw0steps(9);
-    // else if (content[7] == '0' && content[9] == '0' && !bDisabled[8]) draw0steps(8);
-    // else if (content[8] == '0' && content[9] == '0' && !bDisabled[7]) draw0steps(7);
-    //
-    // else if (content[1] == '0' && content[4] == '0' && !bDisabled[7]) draw0steps(7);
-    // else if (content[1] == '0' && content[7] == '0' && !bDisabled[4]) draw0steps(4);
-    // else if (content[4] == '0' && content[7] == '0' && !bDisabled[1]) draw0steps(1);
-    //
-    // else if (content[2] == '0' && content[5] == '0' && !bDisabled[8]) draw0steps(8);
-    // else if (content[2] == '0' && content[8] == '0' && !bDisabled[5]) draw0steps(5);
-    // else if (content[5] == '0' && content[8] == '0' && !bDisabled[2]) draw0steps(2);
-    //
-    // else if (content[3] == '0' && content[6] == '0' && !bDisabled[9]) draw0steps(9);
-    // else if (content[3] == '0' && content[9] == '0' && !bDisabled[6]) draw0steps(6);
-    // else if (content[6] == '0' && content[9] == '0' && !bDisabled[3]) draw0steps(3);
-    //
-    // else if (content[1] == '0' && content[5] == '0' && !bDisabled[9]) draw0steps(9);
-    // else if (content[1] == '0' && content[9] == '0' && !bDisabled[5]) draw0steps(5);
-    // else if (content[5] == '0' && content[9] == '0' && !bDisabled[1]) draw0steps(1);
-    //
-    // else if (content[3] == '0' && content[5] == '0' && !bDisabled[7]) draw0steps(7);
-    // else if (content[3] == '0' && content[7] == '0' && !bDisabled[5]) draw0steps(5);
-    // else if (content[5] == '0' && content[7] == '0' && !bDisabled[3]) draw0steps(3);
 
    //counters to the humans moves
     if (content[1] == 'x' && content[2] == 'x' && !bDisabled[3]) draw0Steps(3);

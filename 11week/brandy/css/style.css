@@ -7,13 +7,23 @@ img{
   width:100%;
 }
 
+.woman1{
+  /*position: absolute;*/
+  /*min-width: 100%;*/
+  height: 100%;
+}
+
 .carousel{
   margin-top: -20px;
 }
 
 .services{
   text-align: center;
+  /*border: 1px solid red;*/
 
+}
+.service-row{
+  /*border: 1px solid red;*/
 }
 
 .services-intro{
@@ -21,6 +31,7 @@ img{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /*border: 1px solid red;*/
 
 }
 
@@ -35,6 +46,10 @@ img{
   display:inline-block;
   text-align: center;
 }
+
+/*.service-copy nth-child (2){
+  font-size: 55px;
+}*/
 
 .we-care{
   margin-top:0;
@@ -62,17 +77,32 @@ img{
   text-align: center;
 }
 
-.years, .appoint{
+.years, .appoint, .hours-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 3px;
+  /*margin: 3px;*/
   /*text-align: center;*/
 }
 
+.appoint .fa{
+  color: white;
+}
+.appoint{
+  background-color: #DD7B9B;
+  color: white;
+}
+
+.fa-calendar{
+  /*background-color: rgba(66, 66, 66, 0.66);*/
+  color: white;
+}
+
 .hours-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  /*border: 1px solid red;*/
 
 
 }
@@ -87,18 +117,25 @@ ul{
   list-style-type: none;
 }
 
-.hours-wrapper, .text-default{
+/*.hours-wrapper, .text-default{
 text-align: left;
-}
+}*/
 
 .pull-right{
   text-align: right;
 }
 
+.text-default{
+  margin-right: 50px;
+}
+
 .info{
   margin-top: 20px;
   text-align: center;
-  background-color: #B8B8B8;
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  /*background-color: #B8B8B8;*/
 }
 
 .info h1{
@@ -110,6 +147,10 @@ text-align: left;
   text-align: center;
   margin-top: 20px;
   margin: 0;
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .artist-header h1{
@@ -119,11 +160,12 @@ text-align: left;
 
 .profile-wrap{
   text-align: center;
-  width:100%;
+  /*width:100%;*/
   /*margin:10px;*/
-  display: flex;
+  /*display: flex;*/
   /*flex-direction: column;*/
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  /*border: 1px solid red;*/
 }
 
 
@@ -133,7 +175,9 @@ text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:27%;
+  /*border: 1px solid red;*/
+  /*margin:10px;*/
+  /*width:27%;*/
 }
 
 .profile img{
@@ -155,4 +199,66 @@ text-align: left;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+
+
+
+
+.bg-grey {
+      background-color: #f6f6f6;
+  }
+
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #FF69B4;
+  }
+  /*.carousel-indicators li {
+      border-color: #f4511e;
+  }*/
+  .carousel-indicators li.active {
+      background-color: #DD7B9B;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+      color:white;
+      text-shadow: 2px 2px 0px black;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+.cat{
+  width:150px;
+  height:150px;
+  border-radius:100%;
+  display:block;
+  margin:0 auto;
+  /*margin-top: 150px;*/
+  vertical-align:middle;
+
+}
+
+#myCarousel{
+  margin-top: 10px;
+}
+
+.reviews{
+/*border:1px solid red;*/
+height:65vh;
+text-align: center;
 }
